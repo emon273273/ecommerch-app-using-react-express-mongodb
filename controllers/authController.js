@@ -120,6 +120,7 @@ export const loginController = async (req, res) => {
         phone: user.phone,
         address: user.address,
       },
+      token,
     });
   } catch (e) {
     console.log(e);
@@ -129,4 +130,10 @@ export const loginController = async (req, res) => {
       e,
     });
   }
+};
+
+//for testing purpose
+
+export const testController = (req, res) => {
+  res.send("protected routes")
 };

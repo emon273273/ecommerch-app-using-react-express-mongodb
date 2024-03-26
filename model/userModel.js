@@ -28,7 +28,7 @@ const userSchema = new mongoose.Schema(
       default: 0,
     },
   },
-  { timestamps: true }
+  { timestamps: true } //new user create hole sei time add hoye jabe auto
 );
 
 export default mongoose.model("users", userSchema);
